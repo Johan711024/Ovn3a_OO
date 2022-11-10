@@ -11,7 +11,7 @@ namespace Ovn3a_OO
         public bool ScaredOfHumans { get; set; } = true;
         public override void DoSound()
         {
-            
+            Console.WriteLine("Wolf howling");
         }
     }
 }

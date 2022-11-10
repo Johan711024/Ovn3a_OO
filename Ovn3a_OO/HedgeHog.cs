@@ -11,7 +11,7 @@ namespace Ovn3a_OO
         public int NoOfSpikes { get; set; }
         public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Hedgehog milklap");
         }
     }
 }

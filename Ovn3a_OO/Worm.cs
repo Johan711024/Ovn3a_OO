@@ -11,7 +11,7 @@ namespace Ovn3a_OO
         public bool GoodForFishing { get; set; } = true;
         public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Worm noice");
         }
     }
 }

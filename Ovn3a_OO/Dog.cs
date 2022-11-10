@@ -11,7 +11,7 @@ namespace Ovn3a_OO
         public bool Bark { get; set; } = false;
         public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Dogbark");
         }
     }
 }
