@@ -15,36 +15,35 @@ namespace Ovn3a_OO
             get { return age; }
             set
             {
-
-                //  length = value < 0 ? 0 : value;
-
                 if (value > 0)
                 {
-                    age = value;
+                        age = value;
                 }
                 else
-                {
-                    Console.WriteLine("Ålder måste vara över 0");
+                {                  
+                        throw new ArgumentNullException("Måste vara 1 år eller äldre");                   
                 }
+ 
+                
             }
         }
            
-        private string fname;
+        private string? fname;
         public string? fName { get { return fname; }
             set {
                 
 
-                if (value.Length >= 2 && value.Length <= 10)
+                if (value?.Length >= 2 && value.Length <= 10)
                 {
                     fname = value;
                 }
                 else
                 {
-                    Console.WriteLine("Mellan 2-10 tecken är tillåtet");
+                    throw new ArgumentNullException("Mellan 2 -10 tecken är tillåtet");
                 }
             }
         }
-        private string lname;
+        private string? lname;
         public string? lName
         {
             get { return lname; }
@@ -52,13 +51,13 @@ namespace Ovn3a_OO
             {
 
 
-                if (value.Length >= 3 && value.Length <= 15)
+                if (value?.Length >= 3 && value.Length <= 15)
                 {
                     lname = value;
                 }
                 else
                 {
-                    Console.WriteLine("Mellan 3-15 tecken är tillåtet");
+                    throw new ArgumentNullException("Mellan 3-15 tecken är tillåtet");
                 }
             }
         }
@@ -69,7 +68,7 @@ namespace Ovn3a_OO
 
         public double height { get; set; }
 
-        public double width { get; set; }
+        public double weight { get; set; }
 
 
     }
