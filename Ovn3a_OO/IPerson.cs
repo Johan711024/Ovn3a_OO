@@ -8,5 +8,6 @@ namespace Ovn3a_OO
 {
     public interface IPerson
     {
+        public void Talk();
     }
 }

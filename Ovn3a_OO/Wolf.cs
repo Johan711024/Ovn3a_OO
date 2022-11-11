@@ -8,10 +8,14 @@ namespace Ovn3a_OO
 {
     public class Wolf : Animal
     {
-        public bool ScaredOfHumans { get; set; } = true;
-        public override void DoSound()
+        public Wolf(string name, int weight, int age) : base(name, weight, age)
         {
-            Console.WriteLine("Wolf howling");
+        }
+
+        public bool ScaredOfHumans { get; set; } = true;
+        public override string DoSound()
+        {
+            return "Wolf howling";
         }
     }
 }

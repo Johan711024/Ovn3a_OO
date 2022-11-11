@@ -8,8 +8,9 @@ namespace Ovn3a_OO
 {
     public abstract class Animal
     {
-        
-        public Animal() { }
+        //Om samtliga djur behöver nytt attribut ska det läggas här
+
+        //public Animal() { }
         public Animal(string name, int weight, int age)
         {
             Name = name;
@@ -21,7 +22,14 @@ namespace Ovn3a_OO
         public int  Weight { get; set; }
         public int Age { get; set; }
 
-        public abstract void DoSound();
+        public abstract string DoSound();
+
+        public virtual string Stats() 
+        {        
+            //return Name + Weight.ToString() + Age.ToString();
+            return $"Name: {Name}, Weight: {Weight}, Age: {Age}, ";
+        }
+        
 
 
     }

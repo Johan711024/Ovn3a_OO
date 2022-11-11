@@ -8,6 +8,10 @@ namespace Ovn3a_OO
 {
     public class Swan : Bird
     {
+        public Swan(string name, int weight, int age) : base(name, weight, age)
+        {
+        }
+
         public int NoOfKids { get; set; }
     }
 }

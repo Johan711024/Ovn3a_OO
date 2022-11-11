@@ -8,10 +8,14 @@ namespace Ovn3a_OO
 {
     public class HedgeHog : Animal
     {
-        public int NoOfSpikes { get; set; }
-        public override void DoSound()
+        public HedgeHog(string name, int weight, int age) : base(name, weight, age)
         {
-            Console.WriteLine("Hedgehog milklap");
+        }
+
+        public int NoOfSpikes { get; set; }
+        public override string DoSound()
+        {
+            return "Hedgehog milklap";
         }
     }
 }

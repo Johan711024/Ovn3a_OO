@@ -8,6 +8,10 @@ namespace Ovn3a_OO
 {
     public class Pelican : Bird
     {
-        public string Location { get; set; }
+        public Pelican(string name, int weight, int age) : base(name, weight, age)
+        {
+        }
+
+        public string? Location { get; set; }
     }
 }

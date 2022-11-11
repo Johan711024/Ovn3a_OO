@@ -8,10 +8,25 @@ namespace Ovn3a_OO
 {
     public class Bird : Animal
     {
+        //Om samtliga fåglar behöver ett nytt attribut ska det läggas här
+        
+
         public bool CanFly { get; set; } = true;
-        public override void DoSound()
+        
+
+        public Bird(string name, int weight, int age) : base(name, weight, age)
         {
-            Console.WriteLine("Birdsong");
         }
+
+        public override string DoSound()
+        {
+            return "Birdsong";
+        }
+        public override string Stats()
+        {
+            base.Stats();
+            return CanFly.ToString();
+        }
+        //return $"{base.Drive(distance)} From: {GetType().Name}";
     }
 }
